@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registerinsformulär</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Registeringsformulär</h1>
+    <div class="formContainer">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="company">
+          <label for="company">Company :</label>
+          <input id="company" name="company" type="text" />
+        </div>
+
+        <div class="firstName">
+          <label for="firstName">first Name :</label>
+          <input id="firstName" name="firstName" type="text" />
+        </div>
+
+        <div class="lastName">
+          <label for="lastName">last Name :</label>
+          <input id="lastName" name="lastName" type="text" />
+        </div>
+
+        <div class="email">
+          <label for="email">email :</label>
+          <input id="email" name="email" type="email" />
+        </div>
+
+        <div class="phone">
+          <label for="phone">Phone :</label>
+          <input id="phone" name="phone" type="text" />
+        </div>
+
+        <div class="date1"><p>252 Training Session 2018 :</p></div>
+        <div class="date">
+          <label for="dateSelect"></label>
+          <select name="date" id="dateSelect">
+            <option value="">Please choose a date</option>
+            <option value="Training Session 2018">Training Session 2018</option>
+            <option value="Training Session 2019">Training Session 2019</option>
+            <option value="Training Session 2020">Training Session 2020</option>
+            <option value="Training Session 2021">Training Session 2021</option>
+            <option value="Training Session 2022">Training Session 2022</option>
+            <option value="Training Session 2023">Training Session 2023</option>
+          </select>
+        </div>
+
+        <div class="JobFunction1"><p>Job Function :</p></div>
+
+        <div class="JobFunction">
+          <!-- <label for="JobFunction">Job Function :</label> -->
+          <div class="radioRow">
+            <input
+              type="radio"
+              value="Campain Managment"
+              name="Job Function"
+              id="Campain Managment"
+            />
+            <label for="Campain Managment" class="radio">
+              Campain Managment
+            </label>
+          </div>
+
+          <div class="radioRow">
+            <input
+              type="radio"
+              value="CRM Administration"
+              name="Job Function"
+              id="CRM Administration"
+            />
+            <label for="CRM Administration" class="radio">
+              CRM Administration
+            </label>
+          </div>
+
+          <div class="radioRow">
+            <input
+              type="radio"
+              value="Email Deployment"
+              name="Job Function"
+              id="Email Deployment"
+            />
+            <label for="Email Deployment" class="radio">
+              Email Deployment
+            </label>
+          </div>
+
+          <div class="radioRow">
+            <input
+              type="radio"
+              value="Partner"
+              name="Job Function"
+              id="Partner"
+            />
+            <label for="Partner" class="radio"> Partner </label>
+          </div>
+
+          <div class="radioRow">
+            <input
+              type="radio"
+              value="Employee"
+              name="Job Function"
+              id="Employee"
+            />
+            <label for="Employee" class="radio"> Employee </label>
+          </div>
+        </div>
+
+        <div class="Expectations">
+          <label for="Expectations">Expectations? :</label>
+          <textarea id="msg" name="Expectations"></textarea>
+        </div>
+
+        <div class="send">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

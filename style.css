@@ -1,0 +1,98 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer form {
+  border: 5px solid bisque;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: aqua;
+  width: 700px;
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 300px 300px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+  grid-column: 2;
+}
+
+.date {
+  grid-column: 2;
+}
+.JobFunction input {
+  grid-column: 2;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.Expectations {
+  grid-column: span 2;
+}
+
+.firstName {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.lastName {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.email {
+  grid-column: 1;
+}
+
+.phone {
+  grid-column: 2;
+}
+
+.date1 {
+  grid-column: 1;
+  font-weight: bold;
+}
+
+.date {
+  grid-column: 2;
+}
+
+.JobFunction1 {
+  grid-column: 1;
+  margin-bottom: 150px;
+  font-weight: bold;
+}
+
+.JobFunction {
+  grid-column: 2;
+}
+
+.radio {
+  display: none;
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.radio--input {
+  display: flex;
+}
